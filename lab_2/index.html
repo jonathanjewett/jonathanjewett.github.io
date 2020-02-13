@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Dr Terra Nova">
+    <link rel="stylesheet" type="text/css" href="lab_style.css">
+</head>
+<body>
+    <div class="sender-column">
+    <address>
+        <p>
+        <strong>Dr. Terra Nova</strong><br>
+        Faculty of Information<br>
+        University of Maryland<br>
+        College Park, MD<br>
+        20742<br>
+        USA<br>
+        <strong>Tel</strong>: 123-456-7890<br>
+        <strong>Email</strong>: no_reply@example.com<br>
+        </p>
+    </address>
+    18 Jan 2020<br>
+    </div>
+<p>
+<strong><abbr title="Reverend">Rev.</abbr> Dover Cliff</strong><br><!--abbreviation required?-->
+1861 Roses Way<br>
+Glasgow, CT9 XXX<br>
+UK<br>
+</p>
+
+<h1>Re: Dover Cliff university application</h1>
+<p>
+Dear Dover,<br>
+<br>
+Thank you for your recent application to join us at <abbr title="University of Maryland">UMD</abbr>'s iSchool to study for your undergraduate in 2020. I will answer your questions one by one, in the following sections.
+</p>
+
+<h2>Starting dates</h2>
+<p>
+We are happy to accommodate you starting your study with us at any time, however it would suit us better if you could start at the beginning of a semester; the start dates for each one are as follows:
+</p>
+<ul>
+<li>First semester: <time datetime="2019-08-29">29 August 2019</time></li>
+<li>Second semester: <time datetime="2020-01-22">22 January 2020</time></li>
+<li>Third semester: <time datetime="2020-05-02">2 May 2020</time></li>
+</ul>
+<p>
+Please let me know if this is ok, and if so which start date you would prefer.<br>
+<br>
+You can find more information about <a href="#">important university dates</a> on our website.
+</p>
+
+<h2>Subjects of study</h2>
+<p>
+At the iSchool, we have a pretty open-minded research facility — as long as the subjects fall somewhere in the realm of information studies. You seem like an intelligent, dedicated researcher, and just the kind of person we'd like to have on our team. Saying that, of the ideas you submitted we were most intrigued by are as follows, in order of priority:
+</p>
+<ol>
+<li>Turning H<sub>2</sub>O into wine, and the health benefits of Resveratrol (C<sub>14</sub>H<sub>12</sub>O<sub>3</sub>.)</li>
+<li>Measuring the effect on performance of funk bassplayers at temperatures exceeding 30°C (86°F), when the audience size exponentially increases (effect of 3 × 10<sup>3</sup> increasing to 3 × 10<sup>4</sup>.)</li>
+<li><abbr title="Hyper Text Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> constructs for representing musical scores.</li>
+</ol>
+<p>
+So please can you provide more information on each of these subjects, including how long you'd expect the research to take, required staff and other resources, and anything else you think we'd need to know? Thanks.
+</p>
+
+<h2>Animals of the Extended Perambulation</h2>
+<p>
+Yes, you are right! As part of my post-doctorate work, I <em>did</em> study animals. To answer your question, my favourite creatures are as follows, with definitions:
+</p>
+<dl>
+<dt>The Canadian Polar bear</dt>
+<dd>A large predator, very hungry these days. Feeds almost entirely on seal.</dd>
+<dt>The elk</dt>
+<dd>An elk is a horned ungulate found primarily in the mountainous regions of British Columbia. It can be seen from railways, and also frequently visits the Banff centre for the arts.</dd>
+<dt>The red-tailed hawk</dt>
+<dd>An interesting example of historic misinformation: many people believe eagles make the screaming noise associated with them on film. This cry is instead the call of the red-tail.</dd>
+</dl>
+<p>
+For more of my research, see my <a href="#">research page</a>.<br>
+<br>
+Yours sincerely,<br>
+<br>
+Dr Terra Nova<br>
+</p>
+<blockquote><abbr title="University of Maryland">UMD</abbr> motto: "Fear the Turtle" -- How did this happen, anyway.
+</blockquote>
+</body>
+</html>
+<!--
+    Block/structural semantics:
+
+The letter in general should be marked up with a structure of paragraphs and headings, with the exception of the below points. There is one top level heading (the "Re:" line) and three second level headings.
+The semester start dates, study subjects and exotic dances should be marked up using an appropriate list type.
+The two addresses should be put inside <address> elements. Each line of the address should sit on a new line, but not be in a new paragraph.
+Inline semantics:
+
+The names of the sender and receiver (and "Tel" and "Email") should be marked up with strong importance.
+The four dates in the document should be given appropriate elements containing machine-readable dates.
+The first address and first date in the letter should be given a class attribute value of "sender-column"; the CSS you'll add later will then cause these to be right aligned, as should be the case in a classic letter layout.
+The five acronyms/abbreviations in the main text of the letter should be marked up to provide expansions of each acronym/abbreviation.
+The six sub/superscripts should be marked up appropriately — in the chemical formulae,  and the numbers 103 and 104 (they should be 10 to the power or 3 and 4, respectively).
+Try to mark up at least two appropriate words in the text with strong importance/emphasis.
+There are two places where a hyperlink should be added; add appropriate links with titles. For the location that the links point to, just use http://example.com.
+The university motto quote and citation should be marked up with appropriate elements.
+The head of the document:
+
+The character set of the document should be specified as utf-8 using an appropriate meta tag.
+The author of the letter should be specified in an appropriate meta tag.
+The provided CSS should be included inside an appropriate tag.
+-->
+<a href="link_id"></a><!-- text that links to something -->
+<a name="link_id"></a><!-- What the text will link to -->
