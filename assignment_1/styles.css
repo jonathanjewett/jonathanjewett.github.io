@@ -1,9 +1,15 @@
+body{
+    background-color: #98ADC5;
+}
+
 header {
     width: 100%;
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
-    background-color: black;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #3D526A;
     color:white;
 }
 
@@ -12,11 +18,34 @@ header {
     width: 30%;
 }
 
-.portrait {
-    height: 30%;
-    width: 30%;
+.portrait_caption {
+    max-width: 33%;
 }
 
+.portrait_caption p {
+    display: flex;
+    justify-content: center;
+    background-color: #8A5E3C;
+}
+
+.portrait {
+    height: 400px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
 .content_body {
     width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.roles {
+    min-width: 66%;
+    background-color: #8A5E3C;
 }
