@@ -1,4 +1,22 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: black;
+    color:white;
+}
 
-h1, h2, h3 {
-    color: red;
+.cover_photo {
+    height: 30%;
+    width: 30%;
+}
+
+.portrait {
+    height: 30%;
+    width: 30%;
+}
+
+.content_body {
+    width: 960px;
 }
