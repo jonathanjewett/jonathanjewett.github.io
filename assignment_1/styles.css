@@ -1,4 +1,5 @@
 body{
+    margin: 0px;
     background-color: #98ADC5;
 }
 
@@ -19,12 +20,16 @@ header {
 }
 
 .portrait_caption {
-    max-width: 33%;
+    max-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .portrait_caption p {
     display: flex;
     justify-content: center;
+    text-align: left;
     background-color: #8A5E3C;
 }
 
@@ -39,13 +44,30 @@ header {
     display: flex;
     justify-content: center;
 }
+
 .content_body {
-    width: 960px;
+    max-width: 960px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .roles {
-    min-width: 66%;
+    min-width: 640px;
     background-color: #8A5E3C;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .portrait_caption {
+        max-width: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 15px;
+    }
 }
