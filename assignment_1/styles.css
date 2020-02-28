@@ -8,15 +8,19 @@ header {
     margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     background-color: #3D526A;
-    color:white;
+    color:#CCDAFF;
+}
+h1 {
+    margin: 15px;
 }
 
 .cover_photo {
-    height: 30%;
-    width: 30%;
+    height: 200px;
+    width: 300px;
+    margin: 15px;
 }
 
 .portrait_caption {
@@ -27,10 +31,14 @@ header {
 }
 
 .portrait_caption p {
+    width: 300px;
+    padding: 10px;
+    margin: 5px;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: left;
-    background-color: #8A5E3C;
+    background-color: #CCDAFF;
 }
 
 .portrait {
@@ -54,7 +62,11 @@ header {
 
 .roles {
     min-width: 640px;
-    background-color: #8A5E3C;
+    background-color: #CCDAFF;
+}
+
+h2 {
+    padding-left: 10px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -65,9 +77,13 @@ header {
 
     .portrait_caption {
         max-width: none;
-        display: flex;
-        flex-wrap: wrap;
         align-items: center;
         margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .portrait_caption {
+        flex-direction: column;
     }
 }
