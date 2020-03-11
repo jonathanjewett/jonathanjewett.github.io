@@ -11,7 +11,7 @@
     <div class="wrapper">
       <div class="header">Jonathan Jewett's Lab 5</div>
       <!-- <button class="button" onclick="loadData()">Load Some JSON</button> -->
-      <button class="activate">Click me to replace list
+      <button class="activate" onClick="loadList()">Click me to replace list
         entries</button>
       <div class="content">
       </div>
@@ -266,6 +266,37 @@
       { "name": "Zimbabwe", "code": "ZW" }
     ]
     console.log("List of countries in the world", countries);
+
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
+
+    function loadList() {
+      const content = document.querySelector(".content");
+      content.innerHTML = '';
+
+      const countryList = document.createElement("ol");
+      const countryArray = [];
+      
+      for (var i = 0; i < 25; i++) {
+
+        var r = getRandomInt(countries.length);
+        var p = countryArray.length;
+        var exists = false;
+        
+        while (p--) {
+          if (countryArray[p] === countryList[r]) {
+            exists = true;
+          }
+        }
+        if (!exists){
+          var li = document.createElement("li");
+          li.innerHTML = countries[r].code.bold() + " " + countries[r].name + "<br>";
+          countryList.appendChild(li);
+        }
+      }
+      content.append(countryList);
+    }
     
   </script>
 </body>
