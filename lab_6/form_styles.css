@@ -1,0 +1,59 @@
+html {
+    background-color: #B0B4B8;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+input, textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+li {
+    padding-bottom: 15px;
+}
+
+.textarea-container {
+    padding-top: 15px;
+}
+
+button {
+    background-color: #ffc477;
+  -moz-border-radius: 11px;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+  border: 2px solid #eeb44f;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 14px;
+  padding: 10px 17px;
+  text-decoration: none;
+  text-shadow: 0px 1px 1px #cc9f52; /* used from lab 5*/
+}
