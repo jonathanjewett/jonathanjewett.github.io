@@ -29,6 +29,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 .portrait_caption p {
@@ -59,6 +60,7 @@ h1 {
     max-width: 960px;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: center;
     
 }
